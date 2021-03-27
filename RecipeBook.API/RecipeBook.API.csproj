@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>acd7ed1d-7a50-4b8d-a70f-87d5c3106b7e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RecipeBook.Core\RecipeBook.Core.csproj" />
+    <ProjectReference Include="..\RecipeBook.Data\RecipeBook.Data.csproj" />
+  </ItemGroup>
+
+
+</Project>

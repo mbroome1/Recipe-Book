@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "id": 663505,
+      "title": "Tofu Gratin",
+      "image": "https://spoonacular.com/recipeImages/663505-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 663520,
+      "title": "Tofu Pineapple Stir-Fry",
+      "image": "https://spoonacular.com/recipeImages/663520-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 663500,
+      "title": "Tofu Chickpeas Lettuce Wraps",
+      "image": "https://spoonacular.com/recipeImages/663500-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 651984,
+      "title": "Mini Tofu Chiffon Cake",
+      "image": "https://spoonacular.com/recipeImages/651984-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 663166,
+      "title": "Thai Tofu With Bok Choy",
+      "image": "https://spoonacular.com/recipeImages/663166-312x231.jpg",
+      "imageType": "jpg"
+    }
+  ],
+  "offset": 0,
+  "number": 5,
+  "totalResults": 29
+}

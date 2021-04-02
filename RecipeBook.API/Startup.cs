@@ -25,8 +25,14 @@ namespace RecipeBook.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IRecipeSearchData, SpoonacularRecipeSearchData>();
+            // -- External API Data Service
+            //services.AddScoped<IRecipeSearchData, SpoonacularRecipeSearchData>();
+            //services.AddScoped<IRecipeData, SpoonacularRecipeData>();
+
+            // -- Local File Test Data Service
+            services.AddScoped<IRecipeSearchData, JsonFileRecipeSearchData>();
             services.AddScoped<IRecipeData, JsonFileRecipeData>();
+
             services.AddHttpClient();
             services.AddControllers();
         }

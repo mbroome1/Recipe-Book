@@ -31,7 +31,7 @@ namespace RecipeBook.API.Controllers
             // Return 400 Bad Request if search is empty or white space
             if (string.IsNullOrWhiteSpace(searchQuery))
             {
-                return BadRequest(new { message = "Search must not be empty."});
+                return StatusCode(400, new { message = "Search must not be empty."});
             }
             try
             {
@@ -49,13 +49,22 @@ namespace RecipeBook.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetRecipe(int id)
         {
-            RecipeResult = await recipeData.Get(id);
-            if (!ModelState.IsValid)
+            try
             {
-                return NotFound();
+                RecipeResult = await recipeData.Get(id);
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest();
+                }
+
+                return Ok(RecipeResult);
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(500, new { message = ex.Message });
             }
 
-            return Ok(RecipeResult);
         }
     }
 }

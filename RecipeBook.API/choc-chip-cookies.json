@@ -1,0 +1,459 @@
+{
+  "vegetarian": false,
+  "vegan": false,
+  "glutenFree": false,
+  "dairyFree": false,
+  "veryHealthy": false,
+  "veryPopular": false,
+  "spoonacularScore": 10,
+  "healthScore": 0,
+  "creditsText": "Pick Fresh Foods",
+  "license": "CC BY 3.0",
+  "sourceName": "Pick Fresh Foods",
+  "pricePerServing": 12.85,
+  "extendedIngredients": [
+    {
+      "id": 18372,
+      "aisle": "Baking",
+      "image": "white-powder.jpg",
+      "consistency": "solid",
+      "name": "baking soda",
+      "nameClean": "baking soda",
+      "original": "1 tsp baking soda",
+      "originalString": "1 tsp baking soda",
+      "originalName": "baking soda",
+      "amount": 1,
+      "unit": "tsp",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 1,
+          "unitShort": "tsp",
+          "unitLong": "teaspoon"
+        },
+        "metric": {
+          "amount": 1,
+          "unitShort": "tsp",
+          "unitLong": "teaspoon"
+        }
+      }
+    },
+    {
+      "id": 1123,
+      "aisle": "Milk, Eggs, Other Dairy",
+      "image": "egg.png",
+      "consistency": "solid",
+      "name": "eggs",
+      "nameClean": "egg",
+      "original": "2 large eggs",
+      "originalString": "2 large eggs",
+      "originalName": "eggs",
+      "amount": 2,
+      "unit": "large",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 2,
+          "unitShort": "large",
+          "unitLong": "larges"
+        },
+        "metric": {
+          "amount": 2,
+          "unitShort": "large",
+          "unitLong": "larges"
+        }
+      }
+    },
+    {
+      "id": 20081,
+      "aisle": "Baking",
+      "image": "flour.png",
+      "consistency": "solid",
+      "name": "flour",
+      "nameClean": "wheat flour",
+      "original": "2¼ cup all-purpose flour",
+      "originalString": "2¼ cup all-purpose flour",
+      "originalName": "all-purpose flour",
+      "amount": 2.25,
+      "unit": "cup",
+      "meta": [
+        "all-purpose"
+      ],
+      "metaInformation": [
+        "all-purpose"
+      ],
+      "measures": {
+        "us": {
+          "amount": 2.25,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 532.323,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 19335,
+      "aisle": "Baking",
+      "image": "sugar-in-bowl.png",
+      "consistency": "solid",
+      "name": "granulated sugar",
+      "nameClean": "sugar",
+      "original": "¾ cup granulated sugar",
+      "originalString": "¾ cup granulated sugar",
+      "originalName": "granulated sugar",
+      "amount": 0.75,
+      "unit": "cup",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 0.75,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 177.441,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 19334,
+      "aisle": "Baking",
+      "image": "light-brown-sugar.jpg",
+      "consistency": "solid",
+      "name": "light brown sugar",
+      "nameClean": "golden brown sugar",
+      "original": "¾ cup light brown sugar",
+      "originalString": "¾ cup light brown sugar",
+      "originalName": "light brown sugar",
+      "amount": 0.75,
+      "unit": "cup",
+      "meta": [
+        "light"
+      ],
+      "metaInformation": [
+        "light"
+      ],
+      "measures": {
+        "us": {
+          "amount": 0.75,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 177.441,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 8120,
+      "aisle": "Cereal",
+      "image": "rolled-oats.jpg",
+      "consistency": "solid",
+      "name": "old-fashioned oats",
+      "nameClean": "oats",
+      "original": "2 cups old-fashioned oats",
+      "originalString": "2 cups old-fashioned oats",
+      "originalName": "old-fashioned oats",
+      "amount": 2,
+      "unit": "cups",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 2,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 473.176,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 1001256,
+      "aisle": "Milk, Eggs, Other Dairy",
+      "image": "white-cream.png",
+      "consistency": "liquid",
+      "name": "plain greek yogurt",
+      "nameClean": "plain greek yogurt",
+      "original": "¼ cup 0% plain greek yogurt",
+      "originalString": "¼ cup 0% plain greek yogurt",
+      "originalName": "0% plain greek yogurt",
+      "amount": 0.25,
+      "unit": "cup",
+      "meta": [
+        "plain",
+        "0%"
+      ],
+      "metaInformation": [
+        "plain",
+        "0%"
+      ],
+      "measures": {
+        "us": {
+          "amount": 0.25,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 59.147,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 2047,
+      "aisle": "Spices and Seasonings",
+      "image": "salt.jpg",
+      "consistency": "solid",
+      "name": "salt",
+      "nameClean": "salt",
+      "original": "½ tsp salt",
+      "originalString": "½ tsp salt",
+      "originalName": "salt",
+      "amount": 0.5,
+      "unit": "tsp",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 0.5,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    },
+    {
+      "id": 10019903,
+      "aisle": "Baking",
+      "image": "chocolate-chips.jpg",
+      "consistency": "solid",
+      "name": "semi sweet chocolate chips",
+      "nameClean": "semisweet chocolate chips",
+      "original": "1½ cup semi-sweet chocolate chips",
+      "originalString": "1½ cup semi-sweet chocolate chips",
+      "originalName": "semi-sweet chocolate chips",
+      "amount": 1.5,
+      "unit": "cup",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 1.5,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 354.882,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 1145,
+      "aisle": "Milk, Eggs, Other Dairy",
+      "image": "butter-sliced.jpg",
+      "consistency": "solid",
+      "name": "unsalted butter",
+      "nameClean": "unsalted butter",
+      "original": "½ cup unsalted butter, softened",
+      "originalString": "½ cup unsalted butter, softened",
+      "originalName": "unsalted butter, softened",
+      "amount": 0.5,
+      "unit": "cup",
+      "meta": [
+        "unsalted",
+        "softened"
+      ],
+      "metaInformation": [
+        "unsalted",
+        "softened"
+      ],
+      "measures": {
+        "us": {
+          "amount": 0.5,
+          "unitShort": "cups",
+          "unitLong": "cups"
+        },
+        "metric": {
+          "amount": 118.294,
+          "unitShort": "ml",
+          "unitLong": "milliliters"
+        }
+      }
+    },
+    {
+      "id": 2050,
+      "aisle": "Baking",
+      "image": "vanilla-extract.jpg",
+      "consistency": "liquid",
+      "name": "vanilla extract",
+      "nameClean": "vanilla extract",
+      "original": "2 tsp vanilla extract",
+      "originalString": "2 tsp vanilla extract",
+      "originalName": "vanilla extract",
+      "amount": 2,
+      "unit": "tsp",
+      "meta": [],
+      "metaInformation": [],
+      "measures": {
+        "us": {
+          "amount": 2,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        },
+        "metric": {
+          "amount": 2,
+          "unitShort": "tsps",
+          "unitLong": "teaspoons"
+        }
+      }
+    }
+  ],
+  "id": 918031,
+  "title": "Oatmeal Chocolate Chip Cookies",
+  "readyInMinutes": 20,
+  "servings": 48,
+  "sourceUrl": "https://pickfreshfoods.com/oatmeal-chocolate-chip-cookies/",
+  "image": "https://spoonacular.com/recipeImages/918031-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "Oatmeal Chocolate Chip Cookies might be just the dessert you are searching for. This recipe makes 48 servings with <b>113 calories</b>, <b>2g of protein</b>, and <b>5g of fat</b> each. For <b>13 cents per serving</b>, this recipe <b>covers 3%</b> of your daily requirements of vitamins and minerals. If you have butter, eggs, flour, and a few other ingredients on hand, you can make it. Not a lot of people made this recipe, and 1 would say it hit the spot. From preparation to the plate, this recipe takes approximately <b>20 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 3%</b>. This score is improvable. Try <a href=\"https://spoonacular.com/recipes/moms-simple-oatmeal-chocolate-chip-cookiesbest-oatmeal-chocolate-cookies-549753\">Mom’s Simple Oatmeal Chocolate Chip Cookies…Best Oatmeal Chocolate Cookies</a>, <a href=\"https://spoonacular.com/recipes/oatmeal-cranberry-white-chocolate-chip-cookies-aka-granola-bar-cookies-543296\">Oatmeal Cranberry White Chocolate Chip Cookies (aka Granola Bar Cookies)</a>, and <a href=\"https://spoonacular.com/recipes/oatmeal-chocolate-chip-cookies-392546\">Oatmeal Chocolate Chip Cookies</a> for similar recipes.",
+  "cuisines": [],
+  "dishTypes": [
+    "antipasti",
+    "starter",
+    "snack",
+    "appetizer",
+    "antipasto",
+    "hor d'oeuvre"
+  ],
+  "diets": [],
+  "occasions": [],
+  "instructions": "Preheat oven to 375  F. Line two cookie sheets with silpat or parchment paper.In a mixer add butter and blend until creamy. Add in the sugars and blend on medium-low until combined. Scape down sides if needed.Pause the mixer and add the vanilla extract and eggs to the mixer. Turn the mixer to medium speed and increase to medium-high and blend until lightly fluffy, about 1 minute. Turn the mixer to low and add in the yogurt. Pause mixer.In a medium sized bowl, combine flour, baking soda, and salt.With the mixer on low, gradually add in the flour. Increase to medium and blend until combined, scraping down sides as needed.Return the mixer to low and gradually add in the oatmeal to the mixer. Blend on medium speed until throughly combined.Reserve  cup of the chocolate chips and stir in the rest into the dough.Using a tablespoon scoop, evenly place dough on baking sheet. Gently press in a few chips to the top of each ball of dough.Bake for 9-10 minutes or until golden.",
+  "analyzedInstructions": [
+    {
+      "name": "",
+      "steps": [
+        {
+          "number": 1,
+          "step": "Preheat oven to 375  F. Line two cookie sheets with silpat or parchment paper.In a mixer add butter and blend until creamy.",
+          "ingredients": [
+            {
+              "id": 1001,
+              "name": "butter",
+              "localizedName": "butter",
+              "image": "butter-sliced.jpg"
+            },
+            {
+              "id": 10118192,
+              "name": "cookies",
+              "localizedName": "cookies",
+              "image": "shortbread-cookies.jpg"
+            }
+          ],
+          "length": null
+        },
+        {
+          "number": 2,
+          "step": "Add in the sugars and blend on medium-low until combined. Scape down sides if needed.Pause the mixer and add the vanilla extract and eggs to the mixer. Turn the mixer to medium speed and increase to medium-high and blend until lightly fluffy, about 1 minute. Turn the mixer to low and add in the yogurt. Pause mixer.In a medium sized bowl, combine flour, baking soda, and salt.With the mixer on low, gradually add in the flour. Increase to medium and blend until combined, scraping down sides as needed.Return the mixer to low and gradually add in the oatmeal to the mixer. Blend on medium speed until throughly combined.Reserve  cup of the chocolate chips and stir in the rest into the dough.Using a tablespoon scoop, evenly place dough on baking sheet. Gently press in a few chips to the top of each ball of dough.",
+          "ingredients": [
+            {
+              "id": 99278,
+              "name": "chocolate chips",
+              "localizedName": "chocolate chips",
+              "image": "chocolate-chips.jpg"
+            },
+            {
+              "id": 2050,
+              "name": "vanilla extract",
+              "localizedName": "vanilla extract",
+              "image": "vanilla-extract.jpg"
+            },
+            {
+              "id": 18372,
+              "name": "baking soda",
+              "localizedName": "baking soda",
+              "image": "white-powder.jpg"
+            },
+            {
+              "id": 8121,
+              "name": "oatmeal",
+              "localizedName": "oatmeal",
+              "image": "rolled-oats.jpg"
+            },
+            {
+              "id": 1116,
+              "name": "yogurt",
+              "localizedName": "yogurt",
+              "image": "plain-yogurt.jpg"
+            },
+            {
+              "id": 11408,
+              "name": "french fries",
+              "localizedName": "french fries",
+              "image": "french-fries-isolated.jpg"
+            },
+            {
+              "id": 0,
+              "name": "dough",
+              "localizedName": "dough",
+              "image": "pizza-dough"
+            },
+            {
+              "id": 20081,
+              "name": "all purpose flour",
+              "localizedName": "all purpose flour",
+              "image": "flour.png"
+            },
+            {
+              "id": 1123,
+              "name": "egg",
+              "localizedName": "egg",
+              "image": "egg.png"
+            },
+            {
+              "id": 2047,
+              "name": "salt",
+              "localizedName": "salt",
+              "image": "salt.jpg"
+            }
+          ],
+          "length": {
+            "number": 1,
+            "unit": "minutes"
+          }
+        },
+        {
+          "number": 3,
+          "step": "Bake for 9-10 minutes or until golden.",
+          "ingredients": [],
+          "length": {
+            "number": 10,
+            "unit": "minutes"
+          }
+        }
+      ]
+    }
+  ],
+  "spoonacularSourceUrl": "https://spoonacular.com/oatmeal-chocolate-chip-cookies-918031"
+}

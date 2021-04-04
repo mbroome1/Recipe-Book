@@ -33,8 +33,17 @@ namespace RecipeBook.API
             services.AddScoped<IRecipeSearchData, JsonFileRecipeSearchData>();
             services.AddScoped<IRecipeData, JsonFileRecipeData>();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", build =>
+                {
+                    build.AllowAnyOrigin();
+                });
+            });
+
             services.AddHttpClient();
             services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +55,7 @@ namespace RecipeBook.API
             }
 
             app.UseRouting();
-
+            app.UseCors("CorsPolicy");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

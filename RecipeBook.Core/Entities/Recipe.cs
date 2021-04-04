@@ -17,7 +17,6 @@ namespace RecipeBook.Core.Entities
         public string creditsText { get; set; }
         public string license { get; set; }
         public string sourceName { get; set; }
-        public float pricePerServing { get; set; }
         public Extendedingredient[] extendedIngredients { get; set; }
         public int id { get; set; }
         public string title { get; set; }
@@ -30,7 +29,7 @@ namespace RecipeBook.Core.Entities
         public string[] cuisines { get; set; }
         public string[] dishTypes { get; set; }
         public string[] diets { get; set; }
-        public object[] occasions { get; set; }
+        public string[] occasions { get; set; }
         public string instructions { get; set; }
         public Analyzedinstruction[] analyzedInstructions { get; set; }
         public string spoonacularSourceUrl { get; set; }

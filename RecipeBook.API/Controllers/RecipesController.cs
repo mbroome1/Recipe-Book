@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using RecipeBook.API.Models;
 using RecipeBook.Core.Entities;
 using RecipeBook.Data;
 using System;
@@ -15,14 +17,16 @@ namespace RecipeBook.API.Controllers
     {
         private readonly IRecipeSearchData recipeSearchData;
         private readonly IRecipeData recipeData;
+        private readonly IMapper mapper;
 
         public RecipeSearch RecipeSearchResult { get; set; }
         public Recipe RecipeResult { get; set; }
 
-        public RecipesController(IRecipeSearchData recipeSearchData, IRecipeData recipeData)
+        public RecipesController(IRecipeSearchData recipeSearchData, IRecipeData recipeData, IMapper mapper)
         {
             this.recipeSearchData = recipeSearchData;
             this.recipeData = recipeData;
+            this.mapper = mapper;
         }
 
         [HttpGet]
@@ -36,7 +40,7 @@ namespace RecipeBook.API.Controllers
             try
             {
                 RecipeSearchResult = await recipeSearchData.Get(searchQuery);
-                return Ok(RecipeSearchResult);
+                return Ok(mapper.Map<RecipeSearchDto>(RecipeSearchResult));
             }
             catch (Exception ex)
             {
@@ -57,7 +61,7 @@ namespace RecipeBook.API.Controllers
                     return BadRequest();
                 }
 
-                return Ok(RecipeResult);
+                return Ok(mapper.Map<RecipeDto>(RecipeResult));
             }
             catch (Exception ex)
             {

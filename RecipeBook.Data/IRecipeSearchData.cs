@@ -9,6 +9,6 @@ namespace RecipeBook.Data
     public interface IRecipeSearchData
     {
         //Task<RecipeSearch> GetAll();
-        Task<RecipeSearch> Get(string searchQuery);
+        Task<RecipeSearch> Get(string searchQuery, int? numberOfRecords, int? offset);
     }
 }

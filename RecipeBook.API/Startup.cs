@@ -53,6 +53,10 @@ namespace RecipeBook.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler();
+            }
 
             app.UseRouting();
             app.UseCors("CorsPolicy");

@@ -42,6 +42,10 @@ namespace RecipeBook.Data
             {
                 throw new Exception("Connection to external api failed.");
             }
+            else if (response.StatusCode == HttpStatusCode.PaymentRequired)
+            {
+                throw new Exception("Exceeded amount of daily requests to the external API. Please try again later.");
+            }
             else
             {
                 throw new Exception("Something Went wrong.");

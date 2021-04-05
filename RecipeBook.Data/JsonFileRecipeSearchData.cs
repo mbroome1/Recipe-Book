@@ -35,7 +35,7 @@ namespace RecipeBook.Data
             }    
         }
 
-        public async Task<RecipeSearch> Get(string searchQuery)
+        public async Task<RecipeSearch> Get(string searchQuery, int? numberOfRecords, int? offsetRecords)
         {
             var search = new RecipeSearch();
             
@@ -49,23 +49,28 @@ namespace RecipeBook.Data
                 search = result;
             }
 
+            
+            var searchResults = search.results
+                    .Where(t => t.title.ToLower().Contains(searchQuery.Trim().ToLower()));
+
             //Create a new result object array from the search query string
-            var filteredResults = search.results
-                    .Where(t => t.title.ToLower().Contains(searchQuery.Trim().ToLower()))
+            var filteredResults = searchResults
+                .Skip(Convert.ToInt32(offsetRecords))
+                .Take(Convert.ToInt32(numberOfRecords))
                     .ToArray();
 
             //Assign values needed for a new return object
-            var filteredResultsCount = filteredResults.Count();
-            var offset = search.offset;
-            var number = search.number;
+            var filteredResultsCount = searchResults.Count();
+            var filteredResultsOffset = Convert.ToInt32(offsetRecords);
+            var filteredResultsNumber = Convert.ToInt32(numberOfRecords);
 
             //Build the new object to return back
             var filteredSearch = new RecipeSearch()
             {
                 results = filteredResults,
                 totalResults = filteredResultsCount,
-                number = filteredResultsCount,
-                offset = offset
+                number = filteredResultsNumber,
+                offset = filteredResultsOffset
             };
 
             return filteredSearch;

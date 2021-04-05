@@ -22,12 +22,12 @@ namespace RecipeBook.Data
         }
 
 
-        public async Task<RecipeSearch> Get(string searchQuery)
+        public async Task<RecipeSearch> Get(string searchQuery, int? numberOfRecords, int? offset)
         {
             var searchResult = new RecipeSearch();
 
             var key = config["ExternalServices:SpoonacularApiKey"];
-            var url = $@"https://api.spoonacular.com/recipes/complexSearch?number=5&apiKey={key}&query={searchQuery}";
+            var url = $@"https://api.spoonacular.com/recipes/complexSearch?apiKey={key}&query={searchQuery}&number={numberOfRecords}&offset={offset}";
 
             var request = new HttpRequestMessage(HttpMethod.Get, url);
             var client = clientFactory.CreateClient();
@@ -42,6 +42,10 @@ namespace RecipeBook.Data
             else if (response.StatusCode == HttpStatusCode.Unauthorized)
             {
                 throw new Exception("Connection to external api failed.");
+            }
+            else if (response.StatusCode == HttpStatusCode.PaymentRequired)
+            {
+                throw new Exception("Exceeded amount of daily requests to the external API. Please try again later.");
             }
             else
             {

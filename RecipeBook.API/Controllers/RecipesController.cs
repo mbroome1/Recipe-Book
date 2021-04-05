@@ -30,7 +30,10 @@ namespace RecipeBook.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetRecipes([FromQuery] string searchQuery)
+        public async Task<IActionResult> GetRecipes(
+            [FromQuery] string searchQuery, 
+            int? numberOfRecords = 10, 
+            int? offset = 0)
         {
             // Return 400 Bad Request if search is empty or white space
             if (string.IsNullOrWhiteSpace(searchQuery))
@@ -39,7 +42,7 @@ namespace RecipeBook.API.Controllers
             }
             try
             {
-                RecipeSearchResult = await recipeSearchData.Get(searchQuery);
+                RecipeSearchResult = await recipeSearchData.Get(searchQuery,numberOfRecords,offset);
                 return Ok(mapper.Map<RecipeSearchDto>(RecipeSearchResult));
             }
             catch (Exception ex)
@@ -68,7 +71,6 @@ namespace RecipeBook.API.Controllers
 
                 return StatusCode(500, new { message = ex.Message });
             }
-
         }
     }
 }

@@ -38,7 +38,7 @@ namespace RecipeBook.API.Controllers
             // Return 400 Bad Request if search is empty or white space
             if (string.IsNullOrWhiteSpace(searchQuery))
             {
-                return StatusCode(400, new { message = "Search must not be empty."});
+                return StatusCode(400, new { error = "Search must not be empty."});
             }
             try
             {
@@ -47,7 +47,7 @@ namespace RecipeBook.API.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { message = ex.Message});
+                return StatusCode(500, new { error = ex.Message});
                 
             }
         }
@@ -69,7 +69,7 @@ namespace RecipeBook.API.Controllers
             catch (Exception ex)
             {
 
-                return StatusCode(500, new { message = ex.Message });
+                return StatusCode(500, new { error = ex.Message });
             }
         }
     }
